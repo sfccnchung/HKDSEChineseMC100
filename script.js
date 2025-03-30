@@ -2,7 +2,7 @@ let currentQuestion = 0;
 let questions = [];
 
 async function loadQuestions() {
-  const res = await fetch(`/data/${topicId}.json`);
+  const res = await fetch(`data/${topicId}.json`);
   questions = await res.json();
   loadQuestion();
 }
